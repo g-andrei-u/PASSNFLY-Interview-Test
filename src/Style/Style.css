@@ -1,0 +1,30 @@
+.center {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.center input {
+    font-size: 18px;
+    padding: 4px;
+    border: 1px solid rgb(127, 127, 127);
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.center button {
+    cursor: pointer;
+    background-color: rgb(87, 87, 255);
+    color: white;
+    font-size: 18px;
+    padding: 8px 35px;
+    border: 0;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.center button:hover {
+    background-color: rgb(57, 57, 255);
+}
