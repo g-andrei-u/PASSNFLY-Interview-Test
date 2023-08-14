@@ -10,7 +10,7 @@ export const Login = () => {
     const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate()
 
-    const handleLogIn = () => {
+    const handleLogIn = async () => {
 
         if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             alert('Incorrect Email');
@@ -33,7 +33,7 @@ export const Login = () => {
         }
 
         setIsLoading(true);
-        new Promise(rezolve => setTimeout(rezolve, 5000))
+        await new Promise(rezolve => setTimeout(rezolve, 5000))
         sendData(email, password);
         setIsLoading(false);
         navigate('/success');
